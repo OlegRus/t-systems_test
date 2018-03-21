@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="kitten">
+    <test name="chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="HelloTest"/>
+        </classes>
+    </test>
+    <test name="firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="HelloTest"/>
+        </classes>
+    </test>
+</suite>
