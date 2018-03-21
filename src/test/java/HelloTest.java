@@ -35,7 +35,7 @@ public class HelloTest {
     public void checkKittens(WebElement kitten) {
         driver.moveToWebElement(kitten);
         String searchQuery = yandex.getSearchQueryForKitten(kitten);
-        Assert.assertTrue(driver.waitChangeSrc(kitten), String.format("Search query: '%s'", searchQuery));
+        Assert.assertTrue(driver.waitChangeSrc(kitten), String.format("Image doesn't change\nSearch query: '%s'", searchQuery));
     }
 
     @AfterTest
